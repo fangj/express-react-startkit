@@ -12,6 +12,7 @@
 发布代码位于server/dist中
 
 ### 开发
+```
 cd client
 webpack -w
 
@@ -20,3 +21,4 @@ cd server
 
 cd server/dist
 node app.js
+```
