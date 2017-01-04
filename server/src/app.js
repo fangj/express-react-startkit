@@ -65,7 +65,11 @@ app.use('/upload',express.static(path.join(__dirname, '..','upload')));
 // //文件上传服务
 // app.use('/up',require('./routes/up'));
 
-
+//socket.io
+var server = require('http').Server(app);
+// var io = require('socket.io')(server);
+// app.io=io;
+// require('./socket_handle')(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
