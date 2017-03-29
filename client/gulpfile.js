@@ -5,7 +5,7 @@ var mainBowerFiles = require('main-bower-files');
 
 gulp.task('copy', function () {  
   gulp.src(mainBowerFiles())
-    .pipe(gulp.dest('../server/dist/public/vendor/'));
+    .pipe(gulp.dest('../server/dist/public/'));
 });
 
 gulp.task('wiredep', function () {  
