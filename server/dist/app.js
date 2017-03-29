@@ -1,5 +1,3 @@
-require("babel-polyfill");
-
 var express = require('express');
 var app = express();
 var logger = require('morgan');
@@ -9,13 +7,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var app = express(),
-    server = http.createServer(app);
+    server = require('http').createServer(app);
 
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('dev'));
-
 
 
 //静态文件

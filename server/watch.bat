@@ -1,1 +1,0 @@
-babel src -wd dist
