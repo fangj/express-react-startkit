@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route ,hashHistory,IndexRoute} from 'react-router';
-import Main from '../frame/ant.mobile';
-import HomePage from '../components/ant.mobile.example';
+import Main from '../frame/weui';
+import HomePage from '../components/weui.example';
 
 export default class App extends React.Component {
 

@@ -17,13 +17,13 @@ webpackJsonp([1],[
 
 	var _reactRouter = __webpack_require__(2);
 
-	var _ant = __webpack_require__(6);
+	var _ant = __webpack_require__(10);
 
 	var _ant2 = _interopRequireDefault(_ant);
 
-	var _homepage = __webpack_require__(4);
+	var _antWeb = __webpack_require__(12);
 
-	var _homepage2 = _interopRequireDefault(_homepage);
+	var _antWeb2 = _interopRequireDefault(_antWeb);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51,8 +51,8 @@ webpackJsonp([1],[
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: _ant2.default },
-	          _react2.default.createElement(_reactRouter.Route, { path: 'homepage', component: _homepage2.default }),
-	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _homepage2.default })
+	          _react2.default.createElement(_reactRouter.Route, { path: 'homepage', component: _antWeb2.default }),
+	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _antWeb2.default })
 	        )
 	      );
 	    }
@@ -72,7 +72,11 @@ webpackJsonp([1],[
 /* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -84,9 +88,9 @@ webpackJsonp([1],[
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _antd = __webpack_require__(7);
+	var _antd = __webpack_require__(11);
 
-	var _antWeb = __webpack_require__(13);
+	var _antWeb = __webpack_require__(12);
 
 	var _antWeb2 = _interopRequireDefault(_antWeb);
 
@@ -98,7 +102,7 @@ webpackJsonp([1],[
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(9);
+	__webpack_require__(13);
 	var Header = _antd.Layout.Header,
 	    Content = _antd.Layout.Content,
 	    Footer = _antd.Layout.Footer,
@@ -135,6 +139,8 @@ webpackJsonp([1],[
 	  _createClass(SiderDemo, [{
 	    key: 'render',
 	    value: function render() {
+	      var children = this.props.children;
+
 	      return React.createElement(
 	        _antd.Layout,
 	        { className: 'components-layout-demo-side' },
@@ -227,7 +233,7 @@ webpackJsonp([1],[
 	          _antd.Layout,
 	          null,
 	          React.createElement(Header, { style: { background: '#fff', padding: 0 } }),
-	          React.createElement(_antWeb2.default, null),
+	          children,
 	          React.createElement(
 	            Footer,
 	            { style: { textAlign: 'center' } },
@@ -244,23 +250,13 @@ webpackJsonp([1],[
 	exports.default = SiderDemo;
 
 /***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports) {
 
 	module.exports = antd;
 
 /***/ },
-/* 8 */,
-/* 9 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -273,7 +269,7 @@ webpackJsonp([1],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _antd = __webpack_require__(7);
+	var _antd = __webpack_require__(11);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -307,6 +303,12 @@ webpackJsonp([1],[
 	    )
 	  );
 	};
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 ]);

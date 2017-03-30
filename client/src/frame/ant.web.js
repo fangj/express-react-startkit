@@ -17,6 +17,7 @@ export default class SiderDemo extends React.Component {
     });
   }
   render() {
+    const {children}=this.props;
     return (
       <Layout className="components-layout-demo-side">
         <Sider
@@ -52,7 +53,7 @@ export default class SiderDemo extends React.Component {
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }} />
-          <ExampleContent/>
+          {children}
           <Footer style={{ textAlign: 'center' }}>
             Ant Design ©2016 Created by Ant UED
           </Footer>

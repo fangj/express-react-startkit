@@ -18,11 +18,11 @@ webpackJsonp([2],{
 
 	var _reactRouter = __webpack_require__(2);
 
-	var _simple = __webpack_require__(8);
+	var _simple = __webpack_require__(15);
 
 	var _simple2 = _interopRequireDefault(_simple);
 
-	var _homepage = __webpack_require__(4);
+	var _homepage = __webpack_require__(16);
 
 	var _homepage2 = _interopRequireDefault(_homepage);
 
@@ -69,7 +69,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 8:
+/***/ 15:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96,6 +96,56 @@ webpackJsonp([2],{
 	        ),
 	        children
 	    );
+	};
+
+/***/ },
+
+/***/ 16:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Box = __webpack_require__(17);
+
+	var _Box2 = _interopRequireDefault(_Box);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	  return _react2.default.createElement(_Box2.default, null);
+	};
+
+/***/ },
+
+/***/ 17:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    'Box.js'
+	  );
 	};
 
 /***/ }

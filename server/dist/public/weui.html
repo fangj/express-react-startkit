@@ -17,6 +17,7 @@
         background-color: #f8f8f8;
     }
     </style>
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
     <!-- 项目样式资源加载 -->
     <!-- <link rel="stylesheet" href="build/vendor.css"> -->
     <!-- <link rel="stylesheet" href="build/app.css"> -->
@@ -26,15 +27,10 @@
     <script src="js/react-dom.min.js"></script>
     <script src="js/ReactRouter.js"></script>
     <script src="js/pubsub.min.js"></script>
+    <script src="js/react-weui.js"></script>
     <script src="http://cdn.bootcss.com/axios/0.15.3/axios.min.js"></script>
     <script src="http://cdn.bootcss.com/classnames/2.2.5/index.min.js"></script>
     <script src="http://cdn.bootcss.com/lodash.js/4.17.4/lodash.min.js"></script>
-    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
-    <link href="http://cdn.bootcss.com/antd-mobile/1.0.6/antd-mobile.min.css" rel="stylesheet">
-    <script src="http://cdn.bootcss.com/antd-mobile/1.0.6/antd-mobile.min.js"></script>
-    <script type="text/javascript">
-        antdMobile=window["antd-mobile"]; //webpack的导出文件会把-当作减号
-    </script>
     <!-- <script src="js/socket.io.min.js"></script> -->
     <!-- <script type="text/javascript" src="js/faye-browser-min.js"></script> -->
 </head>
@@ -43,14 +39,7 @@
     <div id="App"></div>
     <!-- 项目脚本资源加载 -->
     <script src="build/vendor.bundle.js"></script>
-    <script src="build/ant.mobile.js"></script>
-    <script>
-    if ('addEventListener' in document) {
-      window.addEventListener('load', function() {
-        FastClick.attach(document.body);
-      }, false);
-    }
-  </script>
+    <script src="build/weui.js"></script>
 </body>
 
 </html>

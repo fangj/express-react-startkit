@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route ,hashHistory,IndexRoute} from 'react-router';
 import Main from '../frame/ant.web';
-import HomePage from '../pages/homepage';
+import HomePage from '../components/ant.web.example';
 
 export default class App extends React.Component {
 

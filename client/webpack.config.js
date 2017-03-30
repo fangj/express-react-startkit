@@ -7,6 +7,7 @@ module.exports={
     app:'./src/app/index.js',
     "ant.web":'./src/app/ant.web.js',
     "ant.mobile":'./src/app/ant.mobile.js',
+    "weui":'./src/app/weui.js',
     vendor:[]
   },
   output:{
@@ -25,7 +26,8 @@ module.exports={
         "react-bootstrap":"ReactBootstrap",
         "classnames":"classNames",
         "antd":"antd",
-        "antd-mobile":"antd-mobile"
+        "antd-mobile":"antdMobile",
+        "react-weui":"reactWeui"
   },
   module:{
     loaders:[
