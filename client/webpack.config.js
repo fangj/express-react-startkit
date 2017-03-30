@@ -8,6 +8,7 @@ module.exports={
     "ant.web":'./src/app/ant.web.js',
     "ant.mobile":'./src/app/ant.mobile.js',
     "weui":'./src/app/weui.js',
+    "todo":'./src/app/todo.js',
     vendor:[]
   },
   output:{
@@ -27,7 +28,9 @@ module.exports={
         "classnames":"classNames",
         "antd":"antd",
         "antd-mobile":"antdMobile",
-        "react-weui":"reactWeui"
+        "react-weui":"reactWeui",
+        "mobx":"mobx",
+        "mobx-react":"mobxReact"
   },
   module:{
     loaders:[
