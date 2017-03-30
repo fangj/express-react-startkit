@@ -5,6 +5,8 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports={
   entry:{
     app:'./src/app/index.js',
+    "ant.web":'./src/app/ant.web.js',
+    "ant.mobile":'./src/app/ant.mobile.js',
     vendor:[]
   },
   output:{
@@ -21,7 +23,9 @@ module.exports={
         "moment":"moment",
         "react-router":"ReactRouter",
         "react-bootstrap":"ReactBootstrap",
-        "classnames":"classNames"
+        "classnames":"classNames",
+        "antd":"antd",
+        "antd-mobile":"antd-mobile"
   },
   module:{
     loaders:[

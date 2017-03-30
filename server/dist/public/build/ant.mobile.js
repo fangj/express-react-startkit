@@ -1,6 +1,5 @@
-webpackJsonp([2],{
-
-/***/ 0:
+webpackJsonp([0],[
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18,9 +17,9 @@ webpackJsonp([2],{
 
 	var _reactRouter = __webpack_require__(2);
 
-	var _simple = __webpack_require__(8);
+	var _ant = __webpack_require__(3);
 
-	var _simple2 = _interopRequireDefault(_simple);
+	var _ant2 = _interopRequireDefault(_ant);
 
 	var _homepage = __webpack_require__(4);
 
@@ -51,7 +50,7 @@ webpackJsonp([2],{
 	        { history: _reactRouter.hashHistory },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
-	          { path: '/', component: _simple2.default },
+	          { path: '/', component: _ant2.default },
 	          _react2.default.createElement(_reactRouter.Route, { path: 'homepage', component: _homepage2.default }),
 	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _homepage2.default })
 	        )
@@ -68,36 +67,12 @@ webpackJsonp([2],{
 	ReactDOM.render(_react2.default.createElement(App, null), document.getElementById('App'));
 
 /***/ },
+/* 1 */,
+/* 2 */,
+/* 3 */
+/***/ function(module, exports) {
 
-/***/ 8:
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = function (_ref) {
-	    var children = _ref.children;
-	    return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	            'h1',
-	            null,
-	            ' \u5E94\u7528\u6807\u9898 '
-	        ),
-	        children
-	    );
-	};
+	"use strict";
 
 /***/ }
-
-});
+]);
