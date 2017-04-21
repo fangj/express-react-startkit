@@ -1,6 +1,6 @@
 webpackJsonp([1],[
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -66,7 +66,7 @@ webpackJsonp([1],[
 
 	ReactDOM.render(_react2.default.createElement(App, null), document.getElementById('App'));
 
-/***/ },
+/***/ }),
 /* 1 */,
 /* 2 */,
 /* 3 */,
@@ -77,7 +77,7 @@ webpackJsonp([1],[
 /* 8 */,
 /* 9 */,
 /* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -249,15 +249,15 @@ webpackJsonp([1],[
 
 	exports.default = SiderDemo;
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = antd;
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -304,11 +304,11 @@ webpackJsonp([1],[
 	  );
 	};
 
-/***/ },
+/***/ }),
 /* 13 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
-/***/ }
+/***/ })
 ]);

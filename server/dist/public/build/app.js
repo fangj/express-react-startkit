@@ -1,7 +1,6 @@
-webpackJsonp([2],{
-
-/***/ 0:
-/***/ function(module, exports, __webpack_require__) {
+webpackJsonp([2],[
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -22,9 +21,13 @@ webpackJsonp([2],{
 
 	var _simple2 = _interopRequireDefault(_simple);
 
-	var _homepage = __webpack_require__(16);
+	var _HomePage = __webpack_require__(16);
 
-	var _homepage2 = _interopRequireDefault(_homepage);
+	var _HomePage2 = _interopRequireDefault(_HomePage);
+
+	var _LoginPage = __webpack_require__(18);
+
+	var _LoginPage2 = _interopRequireDefault(_LoginPage);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49,11 +52,12 @@ webpackJsonp([2],{
 	      return _react2.default.createElement(
 	        _reactRouter.Router,
 	        { history: _reactRouter.hashHistory },
+	        _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _LoginPage2.default }),
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: _simple2.default },
-	          _react2.default.createElement(_reactRouter.Route, { path: 'homepage', component: _homepage2.default }),
-	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _homepage2.default })
+	          _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _HomePage2.default }),
+	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _HomePage2.default })
 	        )
 	      );
 	    }
@@ -67,10 +71,23 @@ webpackJsonp([2],{
 
 	ReactDOM.render(_react2.default.createElement(App, null), document.getElementById('App'));
 
-/***/ },
-
-/***/ 15:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -98,10 +115,9 @@ webpackJsonp([2],{
 	    );
 	};
 
-/***/ },
-
-/***/ 16:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -123,10 +139,9 @@ webpackJsonp([2],{
 	  return _react2.default.createElement(_Box2.default, null);
 	};
 
-/***/ },
-
-/***/ 17:
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -148,6 +163,58 @@ webpackJsonp([2],{
 	  );
 	};
 
-/***/ }
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
 
-});
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _geopattern = __webpack_require__(19);
+
+	var _geopattern2 = _interopRequireDefault(_geopattern);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	__webpack_require__(20);
+
+	var pattern = _geopattern2.default.generate('olx');
+	var bgStyle = { backgroundImage: pattern.toDataUrl() };
+
+	var LoginPage = function LoginPage() {
+		return _react2.default.createElement(
+			"div",
+			{ className: "login-bg vertical-container", style: bgStyle },
+			_react2.default.createElement(
+				"div",
+				null,
+				"hello"
+			)
+		);
+	};
+
+	LoginPage.defaultProps = {};
+	LoginPage.propTypes = {};
+	exports.default = LoginPage;
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+	module.exports = GeoPattern;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ })
+]);

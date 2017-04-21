@@ -1,6 +1,6 @@
 webpackJsonp([3],[
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -21,7 +21,7 @@ webpackJsonp([3],[
 
 	var _ant2 = _interopRequireDefault(_ant);
 
-	var _todo = __webpack_require__(18);
+	var _todo = __webpack_require__(23);
 
 	var _todo2 = _interopRequireDefault(_todo);
 
@@ -66,7 +66,7 @@ webpackJsonp([3],[
 
 	ReactDOM.render(_react2.default.createElement(App, null), document.getElementById('App'));
 
-/***/ },
+/***/ }),
 /* 1 */,
 /* 2 */,
 /* 3 */,
@@ -77,7 +77,7 @@ webpackJsonp([3],[
 /* 8 */,
 /* 9 */,
 /* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -249,15 +249,15 @@ webpackJsonp([3],[
 
 	exports.default = SiderDemo;
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = antd;
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -304,19 +304,24 @@ webpackJsonp([3],[
 	  );
 	};
 
-/***/ },
+/***/ }),
 /* 13 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
-/***/ },
+/***/ }),
 /* 14 */,
 /* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -330,11 +335,11 @@ webpackJsonp([3],[
 
 	var _antd = __webpack_require__(11);
 
-	var _TodoInput = __webpack_require__(19);
+	var _TodoInput = __webpack_require__(24);
 
 	var _TodoInput2 = _interopRequireDefault(_TodoInput);
 
-	var _TodoList = __webpack_require__(21);
+	var _TodoList = __webpack_require__(26);
 
 	var _TodoList2 = _interopRequireDefault(_TodoList);
 
@@ -359,9 +364,9 @@ webpackJsonp([3],[
 	  );
 	};
 
-/***/ },
-/* 19 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -377,7 +382,7 @@ webpackJsonp([3],[
 
 	var _antd = __webpack_require__(11);
 
-	var _todo = __webpack_require__(20);
+	var _todo = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -476,9 +481,9 @@ webpackJsonp([3],[
 
 	exports.default = WrappedHorizontalLoginForm;
 
-/***/ },
-/* 20 */
-/***/ function(module, exports) {
+/***/ }),
+/* 25 */
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -502,9 +507,9 @@ webpackJsonp([3],[
 		});
 	}
 
-/***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -516,17 +521,17 @@ webpackJsonp([3],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mobxReact = __webpack_require__(22);
+	var _mobxReact = __webpack_require__(27);
 
 	var _antd = __webpack_require__(11);
 
-	var _todo = __webpack_require__(20);
+	var _todo = __webpack_require__(25);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-	var _ = __webpack_require__(26);
+	var _ = __webpack_require__(28);
 
 	function deleteHandler(id) {
 	  console.log(id);
@@ -581,20 +586,17 @@ webpackJsonp([3],[
 
 	exports.default = (0, _mobxReact.observer)(TodoList);
 
-/***/ },
-/* 22 */
-/***/ function(module, exports) {
+/***/ }),
+/* 27 */
+/***/ (function(module, exports) {
 
 	module.exports = mobxReact;
 
-/***/ },
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */
-/***/ function(module, exports) {
+/***/ }),
+/* 28 */
+/***/ (function(module, exports) {
 
 	module.exports = _;
 
-/***/ }
+/***/ })
 ]);

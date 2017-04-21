@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "file-loader": "^0.11.1",
     "react-weui": "^1.0.3",
     "wiredep": "^4.0.0"
   },

@@ -30,7 +30,9 @@ module.exports={
         "antd-mobile":"antdMobile",
         "react-weui":"reactWeui",
         "mobx":"mobx",
-        "mobx-react":"mobxReact"
+        "mobx-react":"mobxReact",
+        "trianglify":"Trianglify",
+        "geopattern":"GeoPattern"
   },
   module:{
     loaders:[
@@ -49,7 +51,9 @@ module.exports={
       {
           test: /\.less$/,
           loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
-      }
+      },
+      { test: /\.(png|jpg)$/, 
+        loader: 'file-loader?name=[sha512:hash:base64:7].[ext]&publicPath=img/&outputPath=../img/'} //输出位置针对于build
     ]
   },
   plugins: [

@@ -1,6 +1,6 @@
 webpackJsonp([0],[
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -66,11 +66,11 @@ webpackJsonp([0],[
 
 	ReactDOM.render(_react2.default.createElement(App, null), document.getElementById('App'));
 
-/***/ },
+/***/ }),
 /* 1 */,
 /* 2 */,
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 
@@ -92,18 +92,18 @@ webpackJsonp([0],[
 	  );
 	};
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
-/***/ },
+/***/ }),
 /* 5 */,
 /* 6 */,
 /* 7 */,
 /* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -175,11 +175,11 @@ webpackJsonp([0],[
 	  );
 	};
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = antdMobile;
 
-/***/ }
+/***/ })
 ]);
