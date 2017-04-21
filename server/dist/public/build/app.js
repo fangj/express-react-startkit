@@ -52,13 +52,14 @@ webpackJsonp([2],[
 	      return _react2.default.createElement(
 	        _reactRouter.Router,
 	        { history: _reactRouter.hashHistory },
-	        _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _LoginPage2.default }),
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: _simple2.default },
 	          _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _HomePage2.default }),
 	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _HomePage2.default })
-	        )
+	        ),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _LoginPage2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '*', component: _LoginPage2.default })
 	      );
 	    }
 	  }]);
@@ -82,7 +83,12 @@ webpackJsonp([2],[
 /* 8 */,
 /* 9 */,
 /* 10 */,
-/* 11 */,
+/* 11 */
+/***/ (function(module, exports) {
+
+	module.exports = antd;
+
+/***/ }),
 /* 12 */,
 /* 13 */,
 /* 14 */,
@@ -181,6 +187,10 @@ webpackJsonp([2],[
 
 	var _geopattern2 = _interopRequireDefault(_geopattern);
 
+	var _LoginForm = __webpack_require__(32);
+
+	var _LoginForm2 = _interopRequireDefault(_LoginForm);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	__webpack_require__(20);
@@ -192,16 +202,10 @@ webpackJsonp([2],[
 		return _react2.default.createElement(
 			"div",
 			{ className: "login-bg vertical-container", style: bgStyle },
-			_react2.default.createElement(
-				"div",
-				null,
-				"hello"
-			)
+			_react2.default.createElement(_LoginForm2.default, null)
 		);
 	};
 
-	LoginPage.defaultProps = {};
-	LoginPage.propTypes = {};
 	exports.default = LoginPage;
 
 /***/ }),
@@ -212,6 +216,135 @@ webpackJsonp([2],[
 
 /***/ }),
 /* 20 */
+/***/ (function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _antd = __webpack_require__(11);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	__webpack_require__(33);
+
+	var FormItem = _antd.Form.Item;
+
+	var NormalLoginForm = function (_React$Component) {
+	  _inherits(NormalLoginForm, _React$Component);
+
+	  function NormalLoginForm() {
+	    var _ref;
+
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, NormalLoginForm);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = NormalLoginForm.__proto__ || Object.getPrototypeOf(NormalLoginForm)).call.apply(_ref, [this].concat(args))), _this), _this.handleSubmit = function (e) {
+	      e.preventDefault();
+	      _this.props.form.validateFields(function (err, values) {
+	        if (!err) {
+	          console.log('Received values of form: ', values);
+	        }
+	      });
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+
+	  _createClass(NormalLoginForm, [{
+	    key: 'render',
+	    value: function render() {
+	      var getFieldDecorator = this.props.form.getFieldDecorator;
+
+	      return React.createElement(
+	        'div',
+	        { id: 'components-form-demo-normal-login' },
+	        React.createElement(
+	          _antd.Form,
+	          { onSubmit: this.handleSubmit, className: 'login-form' },
+	          React.createElement(
+	            FormItem,
+	            null,
+	            getFieldDecorator('userName', {
+	              rules: [{ required: true, message: 'Please input your username!' }]
+	            })(React.createElement(_antd.Input, { prefix: React.createElement(_antd.Icon, { type: 'user', style: { fontSize: 13 } }), placeholder: 'Username' }))
+	          ),
+	          React.createElement(
+	            FormItem,
+	            null,
+	            getFieldDecorator('password', {
+	              rules: [{ required: true, message: 'Please input your Password!' }]
+	            })(React.createElement(_antd.Input, { prefix: React.createElement(_antd.Icon, { type: 'lock', style: { fontSize: 13 } }), type: 'password', placeholder: 'Password' }))
+	          ),
+	          React.createElement(
+	            FormItem,
+	            null,
+	            getFieldDecorator('remember', {
+	              valuePropName: 'checked',
+	              initialValue: true
+	            })(React.createElement(
+	              _antd.Checkbox,
+	              null,
+	              'Remember me'
+	            )),
+	            React.createElement(
+	              'a',
+	              { className: 'login-form-forgot', href: '' },
+	              'Forgot password'
+	            ),
+	            React.createElement(
+	              _antd.Button,
+	              { type: 'primary', htmlType: 'submit', className: 'login-form-button' },
+	              'Log in'
+	            ),
+	            'Or ',
+	            React.createElement(
+	              'a',
+	              { href: '' },
+	              'register now!'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return NormalLoginForm;
+	}(React.Component);
+
+	var WrappedNormalLoginForm = _antd.Form.create()(NormalLoginForm);
+	exports.default = WrappedNormalLoginForm;
+
+/***/ }),
+/* 33 */
 /***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

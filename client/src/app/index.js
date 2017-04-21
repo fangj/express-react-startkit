@@ -13,11 +13,12 @@ export default class App extends React.Component {
   render() {
     return (
       <Router history={hashHistory}>
-          <Route path="/login" component={LoginPage}/>
           <Route path="/" component={Main}>
             <Route path="home" component={HomePage}/>
             <IndexRoute  component={HomePage}/>
           </Route>
+          <Route path="/login" component={LoginPage}/>
+          <Route path="*" component={LoginPage}/>
       </Router>
     );
   }
