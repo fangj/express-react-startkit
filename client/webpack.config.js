@@ -9,11 +9,15 @@ module.exports={
     "ant.mobile":'./src/app/ant.mobile.js',
     "weui":'./src/app/weui.js',
     "todo":'./src/app/todo.js',
+    "tsapp":'./src/app/tsapp.js',
     vendor:[]
   },
   output:{
     path: path.join(__dirname,"..","server","dist","public","build"),
     filename:'[name].js'
+  },
+  resolve: {
+    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx",".js", ".json"]
   },
   externals: {
         // require("react") is external and available
@@ -39,6 +43,11 @@ module.exports={
       {
         test:/\.js/,
         loader:'babel-loader',
+        exclude:/node_modules/
+      },
+      {
+        test: /\.tsx?$/,
+        loader: "babel-loader!awesome-typescript-loader",
         exclude:/node_modules/
       },
       // Extract css files
