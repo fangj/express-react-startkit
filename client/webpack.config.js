@@ -47,7 +47,7 @@ module.exports={
       },
       {
         test: /\.tsx?$/,
-        loader: "babel-loader!awesome-typescript-loader",
+        loader: "awesome-typescript-loader",
         exclude:/node_modules/
       },
       // Extract css files
